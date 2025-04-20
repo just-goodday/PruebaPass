@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 //Configuración de Cosmos DB
 const cosmosCliente = new CosmosClient(process.env.COSMOS_DB_CONECTION_STRING);
 const database = cosmosCliente.database('academic-db');
-const container-databse.container('student');
+const container=database.container('student');
 app.use(express.json());
 
 // Ruta para insertar datos
